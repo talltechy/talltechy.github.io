@@ -1,6 +1,34 @@
 {
 	"image": "mcr.microsoft.com/devcontainers/universal:2",
 	"features": {
-		"ghcr.io/jungaretti/features/make:1": {}
+		"ghcr.io/devcontainers-contrib/features/black:2": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/gh-release:1": {
+			"repo": "digitalocean/doctl",
+			"binaryNames": "gh",
+			"version": "latest",
+			"binLocation": "/usr/local/bin",
+			"libLocation": "/usr/local/lib",
+			"additionalFlags": "--no-filter-assets-by-platform"
+		},
+		"ghcr.io/devcontainers-contrib/features/gitsign:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/isort:2": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/pip-audit:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/poetry:2": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/pylint:2": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/trivy:1": {
+			"version": "latest"
+		}
 	}
 }
