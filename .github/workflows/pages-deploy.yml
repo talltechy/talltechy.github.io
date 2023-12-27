@@ -46,7 +46,7 @@ jobs:
           bundler-cache: true
 
       - name: test asset issue
-        run: bash tools/init
+        run: snap install node && bash tools/init
 
       - name: Build site
         run: bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
