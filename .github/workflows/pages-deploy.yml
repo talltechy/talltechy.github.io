@@ -38,9 +38,6 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v3
-
-      - name: Update Bundler
-        run: sudo gem update && bundle lock
       
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
