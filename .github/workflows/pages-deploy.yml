@@ -45,6 +45,9 @@ jobs:
           ruby-version: 3.2.2 # https://github.com/cotes2020/jekyll-theme-chirpy/issues/1429
           bundler-cache: true
 
+      - name: test asset issue
+        run: bash tools/init
+
       - name: Build site
         run: bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
         env:
