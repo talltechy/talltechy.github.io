@@ -43,7 +43,7 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y build-essential && sudo apt upgrade ruby -y
 
       - name: Update Bundler
-        run: sudo gem update
+        run: sudo gem update && bundle lock
       
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
